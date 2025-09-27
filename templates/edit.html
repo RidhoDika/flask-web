@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Edit Data</title>
+</head>
+<body>
+    <h1>Edit Data</h1>
+    <form method="POST">
+        <label>Nama:</label><br>
+        <input type="text" name="nama" value="{{ Data[1] }}" required><br>
+        <label>Usia:</label><br>
+        <input type="number" name="usia" value="{{ Data[2] }}" required><br>
+        <label>Kota:</label><br>
+        <input type="text" name="kota" value="{{ Data[3] }}" required><br><br>
+        <button type="submit">Update</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Kembali</a>
+</body>
+</html>
